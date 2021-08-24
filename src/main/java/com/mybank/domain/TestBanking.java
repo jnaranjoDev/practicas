@@ -13,7 +13,7 @@ public class TestBanking {
 		
 		acc1.deposit(150);
 		acc1.withdraw(300);
-		acc1.withdraw(100);
+		acc1.withdraw(1000);
 
 	}
 
