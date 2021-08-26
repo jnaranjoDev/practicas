@@ -7,7 +7,11 @@ public class TestBanking {
 		
 		Account acc1 = new Account(200);
 		
-		Customer c1 = new Customer("pepe","martinez");
+		Customer c1 = new Customer("Jane","Smith");
+		
+		SavingAccount sa = new SavingAccount(500,3);
+		
+		Customer c2 = new Customer("Owen","Bryant");
 		
 		c1.setAccount(acc1);
 		

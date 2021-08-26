@@ -42,13 +42,7 @@ public class Account implements Serializable {
 			System.out.println("Dinero retirado");
 			System.out.println("El saldo actual es: "+this.balance);
 			return true;
-		}
-		
-		
-		
+		}		
 	}
-	
-	
-	
 	
 }
