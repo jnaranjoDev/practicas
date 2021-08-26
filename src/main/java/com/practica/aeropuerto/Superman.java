@@ -1,4 +1,4 @@
-package com.practica.aeroupuerto;
+package com.practica.aeropuerto;
 
 public class Superman extends Kryptoniano implements ObjetoVolador  {
 

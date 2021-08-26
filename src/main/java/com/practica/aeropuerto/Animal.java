@@ -1,4 +1,4 @@
-package com.practica.aeroupuerto;
+package com.practica.aeropuerto;
 
 public abstract class Animal {
 
