@@ -8,9 +8,9 @@ public class Account implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -3717131186762238385L;
-	private double balance;
+	protected double balance;
 
-	public Account(double initBalance) {
+	protected Account(double initBalance) {
 		super();
 		this.balance = initBalance;
 	}
