@@ -4,21 +4,40 @@ public class TestBanking {
 
 	public static void main(String[] args) {
 		
+		Bank banco = new Bank();	
+		System.out.println("Creating the customer Jane Smith.");	
+		Customer jane = new Customer("Jane","Smith");
 		
-		Account acc1 = new Account(200);
+		banco
 		
-		Customer c1 = new Customer("Jane","Smith");
+		SavingAccount savingAccountJane = new SavingAccount(500,3);
+		jane.setAccount(savingAccountJane);
 		
-		SavingAccount sa = new SavingAccount(500,3);
+		Customer owen = new Customer("Owen","Bryant");
 		
-		Customer c2 = new Customer("Owen","Bryant");
+		CheckingAccount checkingAccountOwen = new CheckingAccount(500);
+		owen.setAccount(checkingAccountOwen);
+		Customer tim = new Customer("Tim", "Soley");
+		CheckingAccount checkingAccountTimAndMaria = new CheckingAccount(500,500);
+		tim.setAccount(checkingAccountTimAndMaria);
+		Customer maria = new Customer("Maria","Soley");
+		maria.setAccount(tim.getAccount());
 		
-		c1.setAccount(acc1);
 		
-		acc1.deposit(150);
-		acc1.withdraw(300);
-		acc1.withdraw(1000);
+		
+		savingAccountJane.withdraw(150);
+		savingAccountJane.deposit(22.50);
+		savingAccountJane.withdraw(47.62);
+		savingAccountJane.withdraw(400);
+		
+		System.out.println("Balance de Jane and Tim"+checkingAccountTimAndMaria.getBalance());
+		
+
+		
+		
 
 	}
+	
+	
 
 }
