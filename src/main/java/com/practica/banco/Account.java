@@ -1,6 +1,8 @@
 package com.practica.banco;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Account implements Serializable {
 
@@ -9,16 +11,26 @@ public class Account implements Serializable {
 	 */
 	private static final long serialVersionUID = -3717131186762238385L;
 	protected double balance;
+	
 
 	protected Account(double initBalance) {
 		super();
 		this.balance = initBalance;
+		
 	}
 
 	public double getBalance() {
 		return balance;
 	}
 	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Account [balance=" + balance + "]";
+	}
+
 	public boolean deposit(double amt) {
 		if((this.balance + amt) < this.balance) {
 			System.out.println("No puedes depositar en negativo");

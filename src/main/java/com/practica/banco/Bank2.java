@@ -6,14 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Bank implements Serializable {
+public class Bank2 implements Serializable {
 
 	private List<Customer> clientes;
 	private int numeroClientes;
 	
 	private Map<String,Customer> clientesMap;
 
-	public Bank() {
+	public Bank2() {
 		numeroClientes = 0;
 		clientes = new ArrayList<>();
 		clientesMap = new HashMap();
